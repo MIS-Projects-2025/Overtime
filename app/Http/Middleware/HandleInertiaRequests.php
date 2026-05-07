@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\OtOperator;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -31,7 +32,10 @@ class HandleInertiaRequests extends Middleware
     {
         return [
             ...parent::share($request),
-            'emp_data' => fn() => session('emp_data'),
+            'emp_data'    => fn() => session('emp_data'),
+            'is_operator' => fn() => OtOperator::where('ot_emp_num', session('emp_data.emp_id'))
+                ->where('ot_account_status', 1)
+                ->exists(),
             'flash' => [
                 'success' => fn() => $request->session()->get('success'),
                 'error'   => fn() => $request->session()->get('error'),

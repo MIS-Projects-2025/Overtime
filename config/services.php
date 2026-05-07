@@ -39,4 +39,9 @@ return [
         'url' => env('HRIS_API_URL'),
         'key' => env('HRIS_API_KEY'),
     ],
+
+    'payroll' => [
+        'url' => env('PAYROLL_API_URL'),
+        'key' => env('PAYROLL_API_KEY'),
+    ],
 ];
