@@ -5,9 +5,9 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from "@/components/ui/select";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
+} from "@/Components/ui/select";
+import { Input } from "@/Components/ui/input";
+import { Card, CardContent } from "@/Components/ui/card";
 
 const STATUS_OPTIONS = [
     { value: "all", label: "All" },

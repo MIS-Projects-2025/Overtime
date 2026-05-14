@@ -4,7 +4,7 @@ use App\Http\Controllers\DemoController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-$app_name = env('APP_NAME', '');
+$app_name = config('app.name');
 
 // Authentication routes
 require __DIR__ . '/auth.php';

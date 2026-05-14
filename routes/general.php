@@ -7,7 +7,7 @@ use App\Http\Middleware\AuthMiddleware;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 
-$app_name = env('APP_NAME', '');
+$app_name = config('app.name');
 
 Route::redirect('/', "/$app_name");
 

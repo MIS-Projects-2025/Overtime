@@ -5,7 +5,7 @@ use App\Http\Controllers\OtOperatorController;
 use App\Http\Middleware\AuthMiddleware;
 use Illuminate\Support\Facades\Route;
 
-$app_name = env('APP_NAME', '');
+$app_name = config('app.name');
 
 Route::prefix($app_name)
     ->middleware(AuthMiddleware::class)

@@ -12,20 +12,20 @@ import {
     Search,
 } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Badge } from "@/components/ui/badge";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Combobox } from "@/components/ui/combobox";
+import { Button } from "@/Components/ui/button";
+import { Input } from "@/Components/ui/input";
+import { Label } from "@/Components/ui/label";
+import { Textarea } from "@/Components/ui/textarea";
+import { Badge } from "@/Components/ui/badge";
+import { Alert, AlertDescription } from "@/Components/ui/alert";
+import { Combobox } from "@/Components/ui/combobox";
 import {
     Dialog,
     DialogContent,
     DialogHeader,
     DialogTitle,
     DialogFooter,
-} from "@/components/ui/dialog";
+} from "@/Components/ui/dialog";
 import {
     Table,
     TableBody,
@@ -33,15 +33,15 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table";
+} from "@/Components/ui/table";
 import {
     Card,
     CardContent,
     CardHeader,
     CardTitle,
     CardDescription,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+} from "@/Components/ui/card";
+import { Separator } from "@/Components/ui/separator";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 
 // ── helpers ──────────────────────────────────────────────────────────────────

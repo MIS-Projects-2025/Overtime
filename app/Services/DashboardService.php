@@ -24,7 +24,7 @@ class DashboardService
         }
 
         if ($isApprover && !empty($directReportIds)) {
-            return $directReportIds;              // team data
+            return [$empId];                      // approver is the requestor for their team
         }
 
         if ($isApprover && empty($directReportIds)) {
